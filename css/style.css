@@ -1,0 +1,1072 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f6f3ef;
+    color: #1f1f1f;
+    line-height: 1.6;
+}
+
+.zaglavlje {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-okvir {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-slika {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
+.logo-okvir h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.navigacija ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.navigacija a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navigacija a:hover,
+.navigacija .aktivna {
+    color: #f4a62a;
+}
+
+.padajuci-meni {
+    position: relative;
+}
+
+.podmeni {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-color: #1d1d1d;
+    min-width: 170px;
+    display: none !important;
+    flex-direction: column;
+    gap: 0 !important;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.podmeni li a {
+    display: block;
+    padding: 12px 15px;
+}
+
+.podmeni li a:hover {
+    background-color: #2d2d2d;
+}
+
+.padajuci-meni:hover .podmeni {
+    display: flex !important;
+}
+
+.hero-sekcija {
+    min-height: 82vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.58)),
+        url("../slike/hero-muzicka-oprema.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+.hero-sadrzaj {
+    max-width: 700px;
+    animation: ulazakTeksta 1.2s ease;
+}
+
+.hero-sadrzaj h2 {
+    font-size: 52px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-sadrzaj p {
+    font-size: 19px;
+    margin-bottom: 28px;
+}
+
+.dugme {
+    display: inline-block;
+    background-color: #f4a62a;
+    color: #111111;
+    padding: 13px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.dugme:hover {
+    background-color: #ffffff;
+    transform: translateY(-4px);
+}
+
+.sekcija {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.sekcija h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.uvodni-tekst {
+    max-width: 760px;
+    margin: 0 auto 40px auto;
+    color: #555555;
+}
+
+.kartice {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.kartica {
+    background-color: #ffffff;
+    width: 310px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kartica:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.kartica img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    filter: brightness(0.92);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.kartica:hover img {
+    filter: brightness(1.08);
+    transform: scale(1.04);
+}
+
+.kartica h3 {
+    margin: 20px 15px 10px;
+    color: #111111;
+}
+
+.kartica p {
+    padding: 0 18px 24px;
+    color: #555555;
+}
+
+.tamna-sekcija {
+    background-color: #181818;
+    color: #ffffff;
+}
+
+.tamna-sekcija .uvodni-tekst {
+    color: #dddddd;
+}
+
+.slajder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.slajder img {
+    width: 70%;
+    max-width: 850px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.strelica {
+    background-color: #f4a62a;
+    color: #111111;
+    border: none;
+    font-size: 30px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.strelica:hover {
+    transform: scale(1.12);
+}
+
+.video-okvir video {
+    width: 80%;
+    max-width: 850px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.poziv-sekcija {
+    background-color: #f4a62a;
+    color: #111111;
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.poziv-sekcija h2 {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.poziv-sekcija p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.svetlo-dugme {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.svetlo-dugme:hover {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+.podnozje {
+    background-color: #111111;
+    color: #ffffff;
+    text-align: center;
+    padding: 22px;
+}
+
+@keyframes ulazakTeksta {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive dizajn */
+
+@media screen and (max-width: 900px) {
+    .zaglavlje {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navigacija ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-sadrzaj h2 {
+        font-size: 38px;
+    }
+
+    .slajder img {
+        width: 82%;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hero-sekcija {
+        min-height: 72vh;
+        text-align: center;
+    }
+
+    .hero-sadrzaj h2 {
+        font-size: 31px;
+    }
+
+    .hero-sadrzaj p {
+        font-size: 16px;
+    }
+
+    .sekcija {
+        padding: 50px 6%;
+    }
+
+    .kartica {
+        width: 100%;
+    }
+
+    .slajder {
+        gap: 8px;
+    }
+
+    .slajder img {
+        width: 78%;
+        height: 240px;
+    }
+
+    .strelica {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .video-okvir video {
+        width: 100%;
+    }
+}
+
+.unutrasnji-hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)),
+        url("../slike/hero-muzicka-oprema.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 110px 8%;
+}
+
+.unutrasnji-hero h2 {
+    font-size: 46px;
+    margin-bottom: 12px;
+    animation: ulazakTeksta 1s ease;
+}
+
+.unutrasnji-hero p {
+    font-size: 19px;
+}
+
+.o-nama-raspored {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    text-align: left;
+}
+
+.tekst-blok {
+    flex: 1;
+}
+
+.tekst-blok h2 {
+    text-align: left;
+}
+
+.tekst-blok p {
+    margin-bottom: 18px;
+    color: #444444;
+}
+
+.slika-blok {
+    flex: 1;
+}
+
+.slika-blok img {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.slika-blok img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.08);
+}
+
+.vrednost-kartica {
+    padding: 28px 20px;
+}
+
+.info-mreza {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.info-stavka {
+    background-color: #ffffff;
+    padding: 28px 18px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-stavka:hover {
+    transform: translateY(-8px);
+}
+
+.info-stavka span {
+    display: inline-block;
+    background-color: #111111;
+    color: #f4a62a;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.info-stavka h3 {
+    margin: 12px 0 8px;
+}
+
+.info-stavka p {
+    color: #555555;
+}
+
+@media screen and (max-width: 900px) {
+    .o-nama-raspored {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tekst-blok h2 {
+        text-align: center;
+    }
+
+    .info-mreza {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .unutrasnji-hero h2 {
+        font-size: 34px;
+    }
+
+    .info-mreza {
+        grid-template-columns: 1fr;
+    }
+}
+
+.proizvod-bootstrap-kartica {
+    position: relative;
+    border: none;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: transparent;
+    height: 100%;
+    min-height: 340px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.proizvod-bootstrap-kartica:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+}
+
+.proizvod-bootstrap-kartica img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.proizvod-bootstrap-kartica .card-body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px 24px;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+}
+
+.proizvod-bootstrap-kartica .card-title,
+.proizvod-bootstrap-kartica .card-text {
+    color: #ffffff;
+    margin: 0;
+}
+
+.proizvod-bootstrap-kartica .card-title {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.proizvod-bootstrap-kartica .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.usluge-mreza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.usluga-kartica {
+    position: relative;
+    min-height: 430px;
+    border-radius: 22px;
+    overflow: hidden;
+    text-align: left;
+    background-color: #111111;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.usluga-kartica:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+}
+
+.usluga-kartica img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.78);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.usluga-kartica:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.62);
+}
+
+.usluga-sadrzaj {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.58);
+    backdrop-filter: blur(2px);
+}
+
+.usluga-sadrzaj h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.usluga-sadrzaj p {
+    color: #eeeeee;
+}
+
+.paketi-mreza {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 35px;
+}
+
+.paket-kartica {
+    background-color: #ffffff;
+    color: #111111;
+    padding: 32px 26px;
+    border-radius: 22px;
+    text-align: left;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.paket-kartica:hover {
+    transform: translateY(-8px);
+}
+
+.paket-kartica h3 {
+    margin-bottom: 14px;
+    font-size: 24px;
+}
+
+.paket-kartica p {
+    color: #555555;
+    margin-bottom: 18px;
+}
+
+.paket-kartica span {
+    display: inline-block;
+    background-color: #111111;
+    color: #f4a62a;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.istaknut-paket {
+    background-color: #f4a62a;
+}
+
+.istaknut-paket p {
+    color: #222222;
+}
+
+.istaknut-paket span {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.proces-koraci {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.proces-korak {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 30px 22px;
+    border-radius: 22px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proces-korak:hover {
+    transform: translateY(-8px);
+}
+
+.proces-korak span {
+    display: inline-flex;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #111111;
+    color: #f4a62a;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.proces-korak h3 {
+    margin-bottom: 10px;
+}
+
+.proces-korak p {
+    color: #555555;
+}
+
+@media screen and (max-width: 1000px) {
+    .usluge-mreza,
+    .paketi-mreza {
+        grid-template-columns: 1fr;
+    }
+
+    .usluga-kartica {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+.kontakt-sekcija {
+    text-align: left;
+}
+
+.kontakt-raspored {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.kontakt-info,
+.forma-okvir {
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 34px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+}
+
+.kontakt-info h2,
+.forma-okvir h2 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+
+.kontakt-info > p {
+    color: #555555;
+    margin-bottom: 24px;
+}
+
+.kontakt-stavka {
+    border-left: 4px solid #f4a62a;
+    padding-left: 16px;
+    margin-bottom: 20px;
+}
+
+.kontakt-stavka h3 {
+    margin-bottom: 4px;
+    color: #111111;
+}
+
+.kontakt-stavka p {
+    color: #555555;
+}
+
+.forma-grupa {
+    margin-bottom: 18px;
+}
+
+.forma-grupa label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color: #111111;
+}
+
+.forma-grupa input,
+.forma-grupa select,
+.forma-grupa textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #cccccc;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.forma-grupa input:focus,
+.forma-grupa select:focus,
+.forma-grupa textarea:focus {
+    border-color: #f4a62a;
+    box-shadow: 0 0 0 3px rgba(244, 166, 42, 0.18);
+}
+
+.forma-grupa small {
+    display: block;
+    color: #c0392b;
+    min-height: 18px;
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+.forma-dugme {
+    width: 100%;
+    font-size: 16px;
+}
+
+.uspesna-poruka {
+    margin-top: 16px;
+    color: #1e7d3b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mapa-okvir {
+    max-width: 1050px;
+    margin: 0 auto;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+@media screen and (max-width: 900px) {
+    .kontakt-raspored {
+        grid-template-columns: 1fr;
+    }
+}
+
+.dugme-vise {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f4a62a;
+    color: #111111;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.dugme-vise:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.popup-prozor {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.72);
+    padding: 40px 20px;
+}
+
+.popup-sadrzaj {
+    max-width: 950px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 24px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+    animation: pojaviPopup 0.3s ease;
+}
+
+.popup-sadrzaj h2 {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #111111;
+    font-size: 34px;
+}
+
+.zatvori-popup {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #111111;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.zatvori-popup:hover {
+    color: #f4a62a;
+}
+
+.popup-stavke {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.popup-kartica {
+    background-color: #f7f7f7;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.popup-kartica:hover {
+    transform: translateY(-6px);
+}
+
+.popup-kartica img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.popup-kartica h3 {
+    padding: 16px 12px 20px;
+    font-size: 19px;
+    color: #111111;
+}
+
+@keyframes pojaviPopup {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .popup-stavke {
+        grid-template-columns: 1fr;
+    }
+
+    .popup-sadrzaj {
+        padding: 24px 18px;
+    }
+
+    .popup-sadrzaj h2 {
+        font-size: 28px;
+    }
+}
+
+.jquery-sekcija {
+    background-color: #f6f3ef;
+}
+
+.saveti-kupovina {
+    display: none;
+    max-width: 850px;
+    margin: 28px auto 0;
+    padding: 28px;
+    background-color: #ffffff;
+    border-radius: 22px;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    border-left: 6px solid #f4a62a;
+}
+
+.saveti-kupovina h3 {
+    margin-bottom: 12px;
+    color: #111111;
+}
+
+.saveti-kupovina p {
+    color: #555555;
+}
+
+.youtube-okvir {
+    width: 850px !important;
+    max-width: 90% !important;
+    aspect-ratio: 16 / 9 !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.youtube-okvir iframe {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 420px !important;
+    display: block !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 600px) {
+    .youtube-okvir iframe {
+        min-height: 240px !important;
+    }
+}
+
+.adaptibilnost {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.adaptibilnost button {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #f4a62a;
+    border-radius: 20px;
+    padding: 7px 12px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.adaptibilnost button:hover {
+    background-color: #f4a62a;
+    color: #111111;
+}
+
+body.svetla-tema {
+    background-color: #f6f3ef;
+    color: #111111;
+}
+
+body.tamna-tema {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+body.tamna-tema .sekcija {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+body.tamna-tema .uvodni-tekst,
+body.tamna-tema p {
+    color: #eeeeee;
+}
+
+body.tamna-tema .kartica,
+body.tamna-tema .kontakt-info,
+body.tamna-tema .forma-okvir,
+body.tamna-tema .info-stavka,
+body.tamna-tema .proces-korak,
+body.tamna-tema .paket-kartica,
+body.tamna-tema .saveti-kupovina {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+body.tamna-tema .kartica h3,
+body.tamna-tema .kontakt-info h2,
+body.tamna-tema .forma-okvir h2,
+body.tamna-tema .info-stavka h3,
+body.tamna-tema .proces-korak h3,
+body.tamna-tema .paket-kartica h3,
+body.tamna-tema .saveti-kupovina h3,
+body.tamna-tema .forma-grupa label,
+body.tamna-tema .kontakt-stavka h3 {
+    color: #ffffff;
+}
+
+body.tamna-tema .kartica p,
+body.tamna-tema .kontakt-info p,
+body.tamna-tema .forma-okvir p,
+body.tamna-tema .info-stavka p,
+body.tamna-tema .proces-korak p,
+body.tamna-tema .paket-kartica p,
+body.tamna-tema .saveti-kupovina p {
+    color: #dddddd;
+}
+
+body.tamna-tema input,
+body.tamna-tema select,
+body.tamna-tema textarea {
+    background-color: #222222;
+    color: #ffffff;
+    border-color: #555555;
+}
+
+body.tamna-tema input::placeholder,
+body.tamna-tema textarea::placeholder {
+    color: #bbbbbb;
+}
+
+@media screen and (max-width: 1000px) {
+    .zaglavlje {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .adaptibilnost {
+        width: 100%;
+    }
+}

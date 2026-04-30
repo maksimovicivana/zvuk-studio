@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Proizvodi firme Zvuk Studio - muzički instrumenti, mikrofoni, zvučnici i studijska oprema.">
+    <meta name="keywords" content="gitare, klavijature, bubnjevi, mikrofoni, zvučnici, muzička oprema">
+    <meta name="author" content="Ivana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zvuk Studio | Proizvodi</title>
+
+    <link rel="stylesheet" href="biblioteke/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="zaglavlje">
+        <div class="logo-okvir">
+            <img src="slike/logo.png" alt="Logo Zvuk Studio" class="logo-slika">
+            <h1>Zvuk Studio</h1>
+        </div>
+
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li class="padajuci-meni">
+                    <a href="proizvodi.html" class="aktivna">Proizvodi</a>
+                    <ul class="podmeni">
+                        <li><a href="#gitare">Gitare</a></li>
+                        <li><a href="#klavijature">Klavijature</a></li>
+                        <li><a href="#ozvucenje">Ozvučenje</a></li>
+                    </ul>
+                </li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+            <div class="adaptibilnost">
+                <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
+                <button type="button" onclick="postaviTemu('tamna')">Tamna tema</button>
+                <button type="button" onclick="promeniFont(1)">A+</button>
+                <button type="button" onclick="promeniFont(-1)">A-</button>
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="unutrasnji-hero">
+            <h2>Proizvodi</h2>
+            <p>Pregled najvažnijih kategorija muzičke opreme iz naše ponude.</p>
+        </section>
+
+        <section class="container py-5">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold mb-3">Muzička oprema za različite potrebe</h2>
+                    <p class="text-muted">
+                        U ponudi se nalaze instrumenti, oprema za snimanje, scensko ozvučenje i dodatna oprema
+                        za muzičare, bendove, škole muzike i studije.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4" id="gitare">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm proizvod-bootstrap-kartica">
+                        <img src="slike/gitara.jpg" class="card-img-top" alt="Akustična gitara">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Akustične gitare</h3>
+                            <p class="card-text text-muted">
+                                Gitare namenjene učenju, kućnom sviranju, nastupima i muzičkim školama.
+                            </p>
+                            <button class="dugme-vise" onclick="otvoriPopup('akusticne')">Više</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm proizvod-bootstrap-kartica">
+                        <img src="slike/elektricna-gitara.jpg" class="card-img-top" alt="Električna gitara">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Električne gitare</h3>
+                            <p class="card-text text-muted">
+                                Modeli za rok, bluz, pop i savremenu muziku, uz mogućnost izbora po nivou iskustva.
+                            </p>
+                            <button class="dugme-vise" onclick="otvoriPopup('elektricne')">Više</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4" id="klavijature">
+                    <div class="card h-100 shadow-sm proizvod-bootstrap-kartica">
+                        <img src="slike/klavijatura.jpg" class="card-img-top" alt="Klavijatura">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Klavijature</h3>
+                            <p class="card-text text-muted">
+                                Digitalne klavijature i sintisajzeri pogodni za vežbanje, nastupe i produkciju.
+                            </p>
+                            <button class="dugme-vise" onclick="otvoriPopup('klavijature')">Više</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark text-white py-5" id="ozvucenje">
+            <div class="container">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="fw-bold mb-3">Ozvučenje i studijska oprema</h2>
+                        <p class="text-light">
+                            Pored instrumenata, u ponudi se nalazi i oprema za nastupe, snimanje i obradu zvuka.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card proizvod-bootstrap-kartica">
+                            <img src="slike/mikrofon.jpg" class="card-img-top" alt="Mikrofon">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Mikrofoni</h3>
+                                <p class="card-text">
+                                    Mikrofoni za vokale, instrumente, probe, nastupe i snimanje.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card proizvod-bootstrap-kartica">
+                            <img src="slike/zvucnik.jpg" class="card-img-top" alt="Zvučnik">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Zvučnici</h3>
+                                <p class="card-text">
+                                    Aktivni i pasivni zvučnici za manje događaje, sale i veće prostore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card proizvod-bootstrap-kartica">
+                            <img src="slike/bubnjevi.jpg" class="card-img-top" alt="Bubnjevi">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Bubnjevi</h3>
+                                <p class="card-text">
+                                    Akustični i elektronski setovi bubnjeva za vežbanje i nastupe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6">
+                        <div class="card proizvod-bootstrap-kartica">
+                            <img src="slike/studijska-oprema.jpg" class="card-img-top" alt="Studijska oprema">
+                            <div class="card-body">
+                                <h3 class="card-title h5">Studijska oprema</h3>
+                                <p class="card-text">
+                                    Interfejsi, slušalice, stalci i osnovna oprema za kućni studio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-3">Kako izabrati pravu opremu?</h2>
+                    <p class="text-muted">
+                        Pri izboru opreme važno je obratiti pažnju na namenu, prostor u kom se koristi,
+                        nivo iskustva korisnika i budžet. Zbog toga kupcima pružamo savetovanje pre kupovine.
+                    </p>
+
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item">Oprema za početnike i škole muzike</li>
+                        <li class="list-group-item">Oprema za bendove i javne nastupe</li>
+                        <li class="list-group-item">Oprema za snimanje i kućni studio</li>
+                        <li class="list-group-item">Dodatna oprema, kablovi i stalci</li>
+                    </ul>
+
+                    <a href="kontakt.html" class="btn btn-warning rounded-pill px-4 fw-bold">
+                        Pošalji upit
+                    </a>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="slike/studio.jpg" class="img-fluid rounded-4 shadow" alt="Muzička oprema u studiju">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="sekcija jquery-sekcija">
+            <h2>Saveti za kupovinu</h2>
+             <p class="uvodni-tekst">
+                 Klikom na dugme možete prikazati osnovne savete za izbor muzičke opreme.
+            </p>
+
+             <button id="dugmeSaveti" class="dugme">Prikaži / sakrij savete</button>
+
+             <div id="savetiKupovina" class="saveti-kupovina">
+                <h3>Na šta obratiti pažnju?</h3>
+                 <p>
+                    Pre kupovine važno je odrediti namenu opreme, budžet, prostor u kom će se koristiti
+                    i nivo iskustva korisnika. Početnicima se preporučuje jednostavna i pouzdana oprema,
+                    dok napredni korisnici često biraju specifične modele prema stilu muzike i načinu rada.
+                 </p>
+            </div>
+         </section>
+
+    </main>
+
+    <div id="popupProzor" class="popup-prozor">
+         <div class="popup-sadrzaj">
+          <span class="zatvori-popup" onclick="zatvoriPopup()">&times;</span>
+
+         <h2 id="popupNaslov">Naziv kategorije</h2>
+
+         <div id="popupStavke" class="popup-stavke"></div>
+    </div>
+    </div>
+
+    <footer class="podnozje">
+        <p>&copy; 2026 Zvuk Studio. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="biblioteke/jquery/jquery.min.js"></script>
+    <script src="biblioteke/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/skripta.js"></script>
+</body>
+</html>

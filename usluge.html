@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Usluge firme Zvuk Studio - servis instrumenata, iznajmljivanje ozvučenja i savetovanje pri kupovini.">
+    <meta name="keywords" content="servis instrumenata, iznajmljivanje ozvučenja, muzička oprema, savetovanje, ozvučenje događaja">
+    <meta name="author" content="Ivana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zvuk Studio | Usluge</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="zaglavlje">
+        <div class="logo-okvir">
+            <img src="slike/logo.png" alt="Logo Zvuk Studio" class="logo-slika">
+            <h1>Zvuk Studio</h1>
+        </div>
+
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li class="padajuci-meni">
+                    <a href="proizvodi.html">Proizvodi</a>
+                    <ul class="podmeni">
+                        <li><a href="proizvodi.html#gitare">Gitare</a></li>
+                        <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
+                        <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
+                    </ul>
+                </li>
+                <li><a href="usluge.html" class="aktivna">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+            <div class="adaptibilnost">
+                <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
+                <button type="button" onclick="postaviTemu('tamna')">Tamna tema</button>
+                <button type="button" onclick="promeniFont(1)">A+</button>
+                <button type="button" onclick="promeniFont(-1)">A-</button>
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="unutrasnji-hero">
+            <h2>Usluge</h2>
+            <p>Prodaja, servis, iznajmljivanje i stručna pomoć pri izboru muzičke opreme.</p>
+        </section>
+
+        <section class="sekcija">
+            <h2>Šta nudimo?</h2>
+            <p class="uvodni-tekst">
+                Zvuk Studio pruža usluge namenjene muzičarima, bendovima, školama muzike,
+                organizatorima događaja i svima koji žele pouzdanu muzičku opremu.
+            </p>
+
+            <div class="usluge-mreza">
+                <article class="usluga-kartica">
+                    <img src="slike/gitara.jpg" alt="Servis muzičkih instrumenata">
+                    <div class="usluga-sadrzaj">
+                        <h3>Servis instrumenata</h3>
+                        <p>
+                            Vršimo osnovno podešavanje instrumenata, zamenu žica, proveru elektronike
+                            i pripremu opreme za probe, nastupe i snimanja.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="usluga-kartica">
+                    <img src="slike/zvucnik.jpg" alt="Iznajmljivanje ozvučenja">
+                    <div class="usluga-sadrzaj">
+                        <h3>Iznajmljivanje ozvučenja</h3>
+                        <p>
+                            Nudimo iznajmljivanje zvučnika, mikrofona, stalaka i osnovne audio opreme
+                            za manje događaje, školske nastupe i probe.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="usluga-kartica">
+                    <img src="slike/studio.jpg" alt="Savetovanje pri kupovini">
+                    <div class="usluga-sadrzaj">
+                        <h3>Savetovanje pri kupovini</h3>
+                        <p>
+                            Pomažemo kupcima da izaberu opremu prema budžetu, nameni,
+                            prostoru i nivou muzičkog iskustva.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="sekcija tamna-sekcija">
+            <h2>Paketi usluga</h2>
+            <p class="uvodni-tekst">
+                Paketi su informativnog karaktera i mogu se prilagoditi potrebama korisnika.
+            </p>
+
+            <div class="paketi-mreza">
+                <article class="paket-kartica">
+                    <h3>Osnovni servis</h3>
+                    <p>
+                        Podešavanje instrumenta, zamena žica i osnovna provera opreme.
+                    </p>
+                    <span>Namenjeno početnicima i učenicima</span>
+                </article>
+
+                <article class="paket-kartica istaknut-paket">
+                    <h3>Scenski paket</h3>
+                    <p>
+                        Iznajmljivanje mikrofona, zvučnika i stalaka za manje događaje.
+                    </p>
+                    <span>Namenjeno bendovima i nastupima</span>
+                </article>
+
+                <article class="paket-kartica">
+                    <h3>Studio savetovanje</h3>
+                    <p>
+                        Preporuka osnovne opreme za snimanje i kućnu produkciju.
+                    </p>
+                    <span>Namenjeno snimanju i produkciji</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="sekcija">
+            <h2>Kako izgleda saradnja?</h2>
+            <p class="uvodni-tekst">
+                Proces je jednostavan i prilagođen korisniku, bez nepotrebnog komplikovanja.
+            </p>
+
+            <div class="proces-koraci">
+                <div class="proces-korak">
+                    <span>1</span>
+                    <h3>Pošaljete upit</h3>
+                    <p>Preko kontakt forme nam opisujete šta vam je potrebno.</p>
+                </div>
+
+                <div class="proces-korak">
+                    <span>2</span>
+                    <h3>Dobijate predlog</h3>
+                    <p>Predlažemo odgovarajuću opremu ili uslugu prema vašim potrebama.</p>
+                </div>
+
+                <div class="proces-korak">
+                    <span>3</span>
+                    <h3>Dogovaramo realizaciju</h3>
+                    <p>Usklađujemo termin, dostupnost, način preuzimanja i detalje usluge.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="poziv-sekcija">
+            <h2>Treba vam preporuka za opremu?</h2>
+            <p>Pošaljite upit i pomoći ćemo vam da izaberete najbolju opciju.</p>
+            <a href="kontakt.html" class="dugme svetlo-dugme">Pošalji upit</a>
+        </section>
+
+    </main>
+
+    <footer class="podnozje">
+        <p>&copy; 2026 Zvuk Studio. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="js/skripta.js"></script>
+</body>
+</html>

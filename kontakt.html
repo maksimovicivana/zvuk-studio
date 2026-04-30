@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kontakt forma firme Zvuk Studio za pitanja o muzičkoj opremi, uslugama i proizvodima.">
+    <meta name="keywords" content="kontakt, Zvuk Studio, muzička oprema, upit, prodavnica instrumenata">
+    <meta name="author" content="Ivana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zvuk Studio | Kontakt</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="zaglavlje">
+        <div class="logo-okvir">
+            <img src="slike/logo.png" alt="Logo Zvuk Studio" class="logo-slika">
+            <h1>Zvuk Studio</h1>
+        </div>
+
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li class="padajuci-meni">
+                    <a href="proizvodi.html">Proizvodi</a>
+                    <ul class="podmeni">
+                        <li><a href="proizvodi.html#gitare">Gitare</a></li>
+                        <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
+                        <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
+                    </ul>
+                </li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="kontakt.html" class="aktivna">Kontakt</a></li>
+            </ul>
+        </nav>
+
+            <div class="adaptibilnost">
+                <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
+                <button type="button" onclick="postaviTemu('tamna')">Tamna tema</button>
+                <button type="button" onclick="promeniFont(1)">A+</button>
+                <button type="button" onclick="promeniFont(-1)">A-</button>
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="unutrasnji-hero">
+            <h2>Kontakt</h2>
+            <p>Pošaljite upit za proizvode, usluge, servis ili savetovanje pri izboru opreme.</p>
+        </section>
+
+        <section class="sekcija kontakt-sekcija">
+            <div class="kontakt-raspored">
+
+                <div class="kontakt-info">
+                    <h2>Kontakt podaci</h2>
+                    <p>
+                        Ukoliko vam je potrebna pomoć pri izboru instrumenta, ozvučenja ili studijske opreme,
+                        možete nas kontaktirati putem forme ili osnovnih kontakt podataka.
+                    </p>
+
+                    <div class="kontakt-stavka">
+                        <h3>Adresa</h3>
+                        <p>Muzička 12, Zrenjanin</p>
+                    </div>
+
+                    <div class="kontakt-stavka">
+                        <h3>Telefon</h3>
+                        <p>+381 60 123 4567</p>
+                    </div>
+
+                    <div class="kontakt-stavka">
+                        <h3>Email</h3>
+                        <p>kontakt@zvukstudio.rs</p>
+                    </div>
+
+                    <div class="kontakt-stavka">
+                        <h3>Radno vreme</h3>
+                        <p>Ponedeljak - petak: 09:00 - 17:00</p>
+                        <p>Subota: 10:00 - 14:00</p>
+                    </div>
+                </div>
+
+                <div class="forma-okvir">
+                    <h2>Pošaljite poruku</h2>
+
+                    <form id="kontaktForma" novalidate>
+                        <div class="forma-grupa">
+                            <label for="ime">Ime i prezime</label>
+                            <input type="text" id="ime" name="ime" placeholder="Unesite ime i prezime">
+                            <small id="imeGreska"></small>
+                        </div>
+
+                        <div class="forma-grupa">
+                            <label for="email">Email adresa</label>
+                            <input type="email" id="email" name="email" placeholder="primer@email.com">
+                            <small id="emailGreska"></small>
+                        </div>
+
+                        <div class="forma-grupa">
+                            <label for="telefon">Telefon</label>
+                            <input type="text" id="telefon" name="telefon" placeholder="0601234567">
+                            <small id="telefonGreska"></small>
+                        </div>
+
+                        <div class="forma-grupa">
+                            <label for="tipUpita">Tip upita</label>
+                            <select id="tipUpita" name="tipUpita">
+                                <option value="">Izaberite tip upita</option>
+                                <option value="proizvodi">Proizvodi</option>
+                                <option value="servis">Servis instrumenata</option>
+                                <option value="iznajmljivanje">Iznajmljivanje opreme</option>
+                                <option value="savetovanje">Savetovanje</option>
+                            </select>
+                            <small id="tipUpitaGreska"></small>
+                        </div>
+
+                        <div class="forma-grupa">
+                            <label for="poruka">Poruka</label>
+                            <textarea id="poruka" name="poruka" rows="5" placeholder="Napišite poruku..."></textarea>
+                            <small id="porukaGreska"></small>
+                        </div>
+
+                        <button type="submit" class="dugme forma-dugme">Pošalji poruku</button>
+
+                        <p id="uspesnaPoruka" class="uspesna-poruka"></p>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="sekcija tamna-sekcija">
+            <h2>Lokacija</h2>
+            <p class="uvodni-tekst">
+                Na mapi je prikazana lokacija prodavnice. Mapa je ugrađena kao multimedijalni element.
+            </p>
+
+            <div class="mapa-okvir">
+                <iframe
+                    src="https://www.google.com/maps?q=Zrenjanin&output=embed"
+                    width="100%"
+                    height="420"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="podnozje">
+        <p>&copy; 2026 Zvuk Studio. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="js/skripta.js"></script>
+</body>
+</html>

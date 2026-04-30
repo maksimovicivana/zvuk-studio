@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Zvuk Studio - prodaja, servis i iznajmljivanje muzičke opreme.">
+    <meta name="keywords" content="muzička oprema, gitare, klavijature, mikrofoni, ozvučenje, servis instrumenata">
+    <meta name="author" content="Ivana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zvuk Studio | Početna</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="zaglavlje">
+        <div class="logo-okvir">
+            <img src="slike/logo.png" alt="Logo Zvuk Studio" class="logo-slika">
+            <h1>Zvuk Studio</h1>
+        </div>
+
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html" class="aktivna">Početna</a></li>
+                <li><a href="onama.html">O nama</a></li>
+                <li class="padajuci-meni">
+                    <a href="proizvodi.html">Proizvodi</a>
+                    <ul class="podmeni">
+                        <li><a href="proizvodi.html#gitare">Gitare</a></li>
+                        <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
+                        <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
+                    </ul>
+                </li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+            <div class="adaptibilnost">
+                <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
+                <button type="button" onclick="postaviTemu('tamna')">Tamna tema</button>
+                <button type="button" onclick="promeniFont(1)">A+</button>
+                <button type="button" onclick="promeniFont(-1)">A-</button>
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero-sekcija">
+            <div class="hero-sadrzaj">
+                <h2>Oprema za svaki zvuk, scenu i studio</h2>
+                <p>
+                    Zvuk Studio je mesto za muzičare, bendove, škole muzike i sve ljubitelje kvalitetnog zvuka.
+                    U ponudi su instrumenti, studijska oprema, mikrofoni, ozvučenje i dodatna oprema.
+                </p>
+                <a href="proizvodi.html" class="dugme">Pogledaj proizvode</a>
+            </div>
+        </section>
+
+        <section class="sekcija">
+            <h2>Naša ponuda</h2>
+            <p class="uvodni-tekst">
+                Izdvajamo najtraženije kategorije muzičke opreme koje možete pronaći u našoj prodavnici.
+            </p>
+
+            <div class="kartice">
+                <article class="kartica">
+                    <img src="slike/gitara.jpg" alt="Akustična gitara">
+                    <h3>Gitare</h3>
+                    <p>Akustične, električne i bas gitare za početnike i profesionalce.</p>
+                </article>
+
+                <article class="kartica">
+                    <img src="slike/klavijatura.jpg" alt="Muzička klavijatura">
+                    <h3>Klavijature</h3>
+                    <p>Digitalni klaviri, sintisajzeri i klavijature za vežbanje i nastupe.</p>
+                </article>
+
+                <article class="kartica">
+                    <img src="slike/mikrofon.jpg" alt="Mikrofon">
+                    <h3>Mikrofoni</h3>
+                    <p>Mikrofoni za pevanje, snimanje, podcast, probe i scenske nastupe.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sekcija tamna-sekcija">
+            <h2>Galerija opreme</h2>
+            <p class="uvodni-tekst">Pogledajte deo atmosfere i opreme koju nudimo.</p>
+
+            <div class="slajder">
+                <button class="strelica" onclick="promeniSliku(-1)">&#10094;</button>
+
+                <img src="slike/gitara.jpg" alt="Slajder muzičke opreme" id="slikaSlajdera">
+
+                <button class="strelica" onclick="promeniSliku(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="sekcija">
+            <h2>Promo video</h2>
+            <p class="uvodni-tekst">
+                Kratak prikaz instrumenta iz naše prodavnice.
+            </p>
+
+            <div class="video-okvir">
+                <video controls>
+                    <source src="video/promo.mp4" type="video/mp4">
+                    Vaš pregledač ne podržava prikaz video zapisa.
+                </video>
+            </div>
+        </section>
+
+    <section class="sekcija tamna-sekcija">
+    <h2>YouTube video</h2>
+    <p class="uvodni-tekst">
+        U nastavku je prikazan ugrađeni YouTube video sa primerom sviranja gitare.
+    </p>
+
+    <div class="youtube-okvir">
+    <iframe 
+        src="https://www.youtube.com/embed/ZPGi2yBqdqw?si=aWLloFX0LPt2FR6E"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+</section>
+
+        <section class="poziv-sekcija">
+            <h2>Treba vam savet pri izboru opreme?</h2>
+            <p>Pošaljite nam upit i pomoći ćemo vam da izaberete opremu prema vašim potrebama.</p>
+            <a href="kontakt.html" class="dugme svetlo-dugme">Kontaktirajte nas</a>
+        </section>
+
+    </main>
+
+    <footer class="podnozje">
+        <p>&copy; 2026 Zvuk Studio. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="js/skripta.js"></script>
+</body>
+</html>

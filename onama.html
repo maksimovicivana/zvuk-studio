@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="O firmi Zvuk Studio - prodaja i servis muzičke opreme.">
+    <meta name="keywords" content="Zvuk Studio, muzička oprema, servis instrumenata, prodavnica instrumenata">
+    <meta name="author" content="Ivana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zvuk Studio | O nama</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="zaglavlje">
+        <div class="logo-okvir">
+            <img src="slike/logo.png" alt="Logo Zvuk Studio" class="logo-slika">
+            <h1>Zvuk Studio</h1>
+        </div>
+
+        <nav class="navigacija">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="onama.html" class="aktivna">O nama</a></li>
+                <li class="padajuci-meni">
+                    <a href="proizvodi.html">Proizvodi</a>
+                    <ul class="podmeni">
+                        <li><a href="proizvodi.html#gitare">Gitare</a></li>
+                        <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
+                        <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
+                    </ul>
+                </li>
+                <li><a href="usluge.html">Usluge</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+            <div class="adaptibilnost">
+                <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
+                <button type="button" onclick="postaviTemu('tamna')">Tamna tema</button>
+                <button type="button" onclick="promeniFont(1)">A+</button>
+                <button type="button" onclick="promeniFont(-1)">A-</button>
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="unutrasnji-hero">
+            <h2>O nama</h2>
+            <p>Upoznajte firmu koja spaja ljubav prema muzici i kvalitetnoj opremi.</p>
+        </section>
+
+        <section class="sekcija o-nama-raspored">
+            <div class="tekst-blok">
+                <h2>Ko smo mi?</h2>
+                <p>
+                    Zvuk Studio je firma koja se bavi prodajom, servisom i iznajmljivanjem muzičke opreme.
+                    Naš cilj je da muzičarima, školama muzike, bendovima i početnicima omogućimo lakši izbor
+                    kvalitetne opreme za vežbanje, snimanje i javne nastupe.
+                </p>
+
+                <p>
+                    U ponudi se nalaze različiti muzički instrumenti, mikrofoni, zvučnici, studijska oprema,
+                    kablovi, stalci i dodatna oprema. Posebnu pažnju posvećujemo savetovanju kupaca, jer pravi
+                    izbor opreme zavisi od prostora, načina korišćenja i nivoa muzičkog iskustva.
+                </p>
+
+                <a href="dokumenti/katalog.pdf" class="dugme" target="_blank">Preuzmi katalog</a>
+            </div>
+
+            <div class="slika-blok">
+                <img src="slike/studio.jpg" alt="Muzički studio sa opremom">
+            </div>
+        </section>
+
+        <section class="sekcija tamna-sekcija">
+            <h2>Naše vrednosti</h2>
+            <p class="uvodni-tekst">
+                Verujemo da kvalitetan zvuk počinje dobrim izborom opreme i iskrenim savetom.
+            </p>
+
+            <div class="kartice">
+                <article class="kartica vrednost-kartica">
+                    <h3>Kvalitet</h3>
+                    <p>Biramo opremu koja je pouzdana, dugotrajna i pogodna za različite nivoe korisnika.</p>
+                </article>
+
+                <article class="kartica vrednost-kartica">
+                    <h3>Podrška</h3>
+                    <p>Kupcima pomažemo pri izboru instrumenata, ozvučenja i studijske opreme.</p>
+                </article>
+
+                <article class="kartica vrednost-kartica">
+                    <h3>Stručnost</h3>
+                    <p>Naš tim prati savremene trendove u muzici, produkciji i scenskom nastupu.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="sekcija">
+            <h2>Za koga je namenjen naš sajt?</h2>
+
+            <div class="info-mreza">
+                <div class="info-stavka">
+                    <span>Muzičari</span>
+                    <h3>Instrumenti i oprema</h3>
+                    <p>Za sve koji traže instrumente, dodatnu opremu i servis.</p>
+                </div>
+
+                <div class="info-stavka">
+                    <span>Bendovi</span>
+                    <h3>Scenski nastupi</h3>
+                    <p>Za bendove kojima je potrebno ozvučenje i scenska oprema.</p>
+                </div>
+
+                <div class="info-stavka">
+                    <span>Producenti</span>
+                    <h3>Studijska oprema</h3>
+                    <p>Za korisnike koji opremaju kućni ili profesionalni studio.</p>
+                </div>
+
+                <div class="info-stavka">
+                    <span>Početnici</span>
+                    <h3>Savetovanje</h3>
+                    <p>Za one koji tek ulaze u svet muzike i treba im pomoć pri izboru.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="podnozje">
+        <p>&copy; 2026 Zvuk Studio. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="js/skripta.js"></script>
+</body>
+</html>
