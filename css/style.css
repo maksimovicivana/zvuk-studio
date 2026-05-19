@@ -1071,6 +1071,8 @@ body.tamna-tema textarea::placeholder {
     }
 }
 
+
+
 .hamburger {
     display: none;
     font-size: 32px;
@@ -1087,7 +1089,7 @@ body.tamna-tema textarea::placeholder {
     }
 
     .navigacija ul {
-        display: none;
+        display: none !important;
         flex-direction: column;
         width: 100%;
         background-color: #111111;
@@ -1096,7 +1098,7 @@ body.tamna-tema textarea::placeholder {
     }
 
     .navigacija ul.active {
-        display: flex;
+        display: flex !important;
     }
 
     .navigacija ul li {
@@ -1109,5 +1111,16 @@ body.tamna-tema textarea::placeholder {
         display: block;
         background-color: transparent;
         box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigacija ul {
+        display: flex !important;
     }
 }
