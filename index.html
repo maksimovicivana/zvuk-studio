@@ -19,22 +19,31 @@
             <h1>Zvuk Studio</h1>
         </div>
 
-        <nav class="navigacija">
-            <ul>
-                <li><a href="index.html" class="aktivna">Početna</a></li>
-                <li><a href="onama.html">O nama</a></li>
-                <li class="padajuci-meni">
-                    <a href="proizvodi.html">Proizvodi</a>
-                    <ul class="podmeni">
-                        <li><a href="proizvodi.html#gitare">Gitare</a></li>
-                        <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
-                        <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
-                    </ul>
-                </li>
-                <li><a href="usluge.html">Usluge</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+<nav class="navigacija">
+
+    <div class="hamburger" id="hamburger">
+        ☰
+    </div>
+
+    <ul id="navLinks">
+        <li><a href="index.html" class="aktivna">Početna</a></li>
+        <li><a href="onama.html">O nama</a></li>
+
+        <li class="padajuci-meni">
+            <a href="proizvodi.html">Proizvodi</a>
+
+            <ul class="podmeni">
+                <li><a href="proizvodi.html#gitare">Gitare</a></li>
+                <li><a href="proizvodi.html#klavijature">Klavijature</a></li>
+                <li><a href="proizvodi.html#ozvucenje">Ozvučenje</a></li>
             </ul>
-        </nav>
+        </li>
+
+        <li><a href="usluge.html">Usluge</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+
+</nav>
 
             <div class="adaptibilnost">
                 <button type="button" onclick="postaviTemu('svetla')">Svetla tema</button>
