@@ -1070,3 +1070,44 @@ body.tamna-tema textarea::placeholder {
         width: 100%;
     }
 }
+
+.hamburger {
+    display: none;
+    font-size: 32px;
+    color: #f4a62a;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .navigacija ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111111;
+        padding: 20px 0;
+        border-radius: 12px;
+    }
+
+    .navigacija ul.active {
+        display: flex;
+    }
+
+    .navigacija ul li {
+        margin: 12px 0;
+        text-align: center;
+    }
+
+    .podmeni {
+        position: static;
+        display: block;
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
